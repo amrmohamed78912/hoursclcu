@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق حساب ساعات العمل</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>مرحبا بكم في تطبيق</h1>
+        <h2>Hours</h2>
+        <h3>لحساب عدد الساعات</h3>
+        <p class="small-text">د.عمرو قطقاط</p>
+
+        <table id="workHoursTable">
+            <thead>
+                <tr>
+                    <th>اليوم</th>
+                    <th>وقت الحضور</th>
+                    <th>وقت الانصراف</th>
+                    <th>عدد الساعات</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- سيتم إنشاء الصفوف تلقائيًا باستخدام JavaScript -->
+            </tbody>
+        </table>
+
+        <button onclick="calculateTotalHours()">احسب عدد الساعات على مدار 31 يوم</button>
+        <p id="totalHours"></p>
+        <button onclick="resetApplication()">إعادة التشغيل</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
